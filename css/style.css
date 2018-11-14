@@ -4,7 +4,7 @@
 
 body{
     margin: 0 auto;
-    font-family: "Open Sans";
+    font-family: "GothamPro";
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -17,12 +17,828 @@ ul {
 }
 
 .container {
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 50px;
+    background-color: #fff;
+}
+
+.titHead,
+.fon,
+.item,
+.partner,
+.statistic,
+.portfolio,
 footer {
-    width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: no-repeat center;
 }
+
+.titHead {
+    height: 880px;
+    margin-bottom: -51px;
+}
+
+.fon {
+    height: 50px;
+}
+
+.item {
+    height: 560px;
+}
+
+.partner {
+    height: 640px;
+}
+
+.statistic {
+    height: 360px;
+}
+
+.portfolio {
+    height: 950px;
+}
+
+footer {
+    height: 510px;
+}
+
+header .contacts a {
+    font-size: 20px;
+    line-height: 36px;
+    color: #212428;
+    text-decoration: none;
+}
+
+.logoTit {
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.unite {
+    padding-top: 45px;
+}
+
+.title {
+    font-size: 27px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.beInvest {
+    font-size: 45px;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.logoSlider li a {
+   font-size: 14px;
+   line-height: 36px;
+   color: #ffffff;
+   text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.logoSlider li a:hover {
+    color: #63a6bc;
+}
+
+.logoSlider li {
+    display: inline-block;
+    margin-right: 30px;
+    float: left;
+}
+
+.logoSlider {
+    float: right;
+}
+
+.title {
+    margin-left: 90px;
+    margin-top: -65px;
+}
+
+form button:nth-child(1) {
+    font-size: 15px;
+    line-height: 27px;
+    color: #68daff;
+    border-color: #68daff;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+form button:nth-child(1):hover {
+    background-color: blue;
+}
+
+form button:nth-child(2) {
+    font-size: 15px;
+    line-height: 27px;
+    color: #db4472;
+    border-color: #db4472;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+form button:nth-child(2):hover {
+    background-color: red;
+}
+
+.forms {
+    padding-top: 100px;
+}
+
+.forms .beInvest {
+    float: left;
+}
+
+.forms form {
+    float: right;
+}
+
+.calculator button {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+
+.calculator h4 {
+    font-size: 21px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.calculator span {
+    font-size: 17px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.depositBlock img {
+    position: absolute;
+    padding-top: 60px;
+}
+
+.depositBlock .profit {
+    position: absolute;
+    display: block;
+    padding-top: 180px;
+}
+
+.depositBlock .move .move1 {
+    display: block;
+}
+
+.depositBlock .percent li {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 25px;
+    color: #a5345c;
+    margin-left: 35px;
+}
+
+.depositBlock .percent {
+    position: relative;
+    float: right;
+    padding-top: 80px;
+    padding-right: 60px;
+}
+
+.depositBlock .plan li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.depositBlock .plan {
+    position: relative;
+    float: right;
+    text-transform: uppercase;
+    padding-right: 45px;
+}
+
+.depositBlock .move {
+    position: absolute;
+    padding-left: 280px;
+    padding-top: 100px;
+}
+
+.calcForm .move1 {
+    position: relative;
+    width: 33.3333%;
+    float: left;
+    margin-top: -8px;
+}
+
+.calcForm .radio {
+    position: relative;
+    width: 33.3333%;
+    float: left;
+    background: none;
+    margin-left: -50px;
+}
+
+.calcForm {
+    display: table;
+    width: calc(100% - 280px);
+    float: right;
+    padding-top: 60px;
+}
+
+.orderList {
+    width: 33.3333%;
+    float: left;
+    margin-left: -50px;
+}
+
+.orderList label {
+    position: relative;
+    padding-top: 7px;
+    padding-left: 40px;
+    margin-left: 15px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #a3a3a3;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked)+label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.radioBtn:not(checked)+label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #a5345c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.radioBtn:checked+label::before {
+    border-color: #a3a3a3;
+}
+
+.radioBtn:checked+label::after {
+    opacity: 1;
+}
+
+.radioBtn+label {
+    cursor: pointer;
+}
+
+.depositBlock .calcDeposit {
+    position: relative;
+    float: right;
+    font-size: 15px;
+    line-height: 30px;
+    color: #a3a3a3;
+    padding-top: 150px;
+    margin-right: -750px;
+    text-align: center;
+}
+
+.calculation span {
+    font-size: 14px;
+    line-height: 47px;
+    color: #ffffff;
+    margin-left: 140px;
+    text-transform: uppercase;
+}
+
+.calculation {
+    position: relative;
+    padding-left: 130px;
+    margin-top: -60px;
+}
+
+.fon {
+    height: 50px;
+}
+
+.currency li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.currency {
+    padding-left: 50px;
+}
+
+.currency li span:first-child {
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.currency li span:last-child {
+    font-size: 13px;
+    line-height: 24px;
+    color: #b0b0b0;
+}
+
+.info {
+    height: 670px;
+}
+
+.presentation img {
+    position: absolute;
+    float: left;
+    padding-top: 120px;
+}
+
+.about {
+    float: right;
+    padding-top: 120px;
+}
+
+.infoContent h1 {
+    font-size: 30px;
+    line-height: 48px;
+    color: #212428;
+    text-transform: uppercase;
+}
+
+.infoContent span {
+    font-size: 17px;
+    line-height: 27px;
+    color: #212428;
+}
+
+.infoContent p {
+ font-size: 15px;
+ line-height: 22px;
+ color: #54565a;
+}
+
+.infoContent .hTit {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.infoContent .sTit {
+    position: relative;
+}
+
+.infoContent .pTit {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.buttons button:nth-child(1) {
+    font-size: 14px;
+    line-height: 27px;
+    color: #63a6bc;
+    background: none;
+    border-color: #63a6bc;
+}
+
+.buttons button:nth-child(2) {
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #a5345c;
+    width: 150px;
+    border: none;
+}
+
+.menu li a {
+    font-size: 17px;
+    line-height: 27px;
+    color: #212428;
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 85px;
+}
+
+.menu {
+    position: center;
+    padding-left: 180px;
+}
+
+.items p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+}
+
+.items span {
+    font-size: 15px;
+    line-height: 22px;
+    color: #a5345c;
+}
+
+.items .logo {
+    position: absolute;
+    display: block;
+    padding-top: 120px;
+    padding-left: 430px;
+}
+
+.items {
+    display: block;
+    width: 100%;
+}
+
+.text,
+.logo,
+.text1 {
+    display: table;
+    width: 33.3333%;
+}
+
+.text {
+    position: relative;
+    float: left;
+    text-align: right;
+    padding-top: 120px;
+    padding-right: 120px;
+}
+
+.text1 {
+    position: relative;
+    float: right;
+    text-align: left;
+    padding-top: 120px;
+    padding-left: 120px;
+}
+
+.icon p {
+    display: block;
+}
+
+.icon .pict {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    right: 20px;
+}
+
+.icon1 .pict1 {
+    position: absolute;
+    display: inline-block;
+    float: right;
+    right: 20px;
+    bottom: 85px;
+}
+
+.icon2 .pict2 {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    left: 20px;
+}
+
+.icon3 .pict3 {
+    position: absolute;
+    display: inline-block;
+    float: left;
+    left: 20px;
+    bottom: 85px;
+}
+
+.icon1 p,
+.icon3 p {
+    padding-top: 85px;
+}
+
+.partners img {
+    position: absolute;
+    padding-top: 145px;
+}
+
+.partners li {
+    display: inline;
+    font-size: 30px;
+    line-height: 25px;
+    color: #73b6cc;
+    margin-left: 60px;
+}
+
+.level li  {
+    display: inline;
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    margin-left: 60px;
+}
+
+.partners ul {
+    padding-top: 115px;
+}
+
+.partners .level {
+    position: absolute;
+    padding-top: 8px;
+}
+
+.partProg .statTit {
+    position: absolute;
+    float: left;
+    padding-top: 110px;
+    padding-left: 80px;
+}
+
+.partProg .statText {
+    position: relative;
+    float: right;
+    padding-top: 60px;
+}
+
+.statText p:nth-child(1) {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.statText p:nth-child(2) {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.partProg {
+    display: table;
+    width: 100%;
+}
+
+.partProg .statTit,
+.partProg .statText {
+    display: table;
+    width: 50%;
+}
+
+.partners h1 {
+    font-size: 42px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.partners h3 {
+    font-size: 24px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.partners p:nth-child(odd) {
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.partners p:nth-child(even) {
+    font-size: 24px;
+    line-height: 22px;
+    color: #73b6cc;
+}
+
+.connect button {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.connect img {
+    position: relative;
+    float: right;
+    padding-right: 80px;
+    padding-top: 55px;
+}
+
+.connect button {
+    position: absolute;
+    float: right;
+    margin-left: 880px;
+    margin-top: 60px;
+}
+
+.infoBlock {
+    height: 815px;
+}
+
+.step1 img {
+    position: absolute;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+
+.step2 img {
+    position: absolute;
+    padding-left: 180px;
+    padding-bottom: 50px;
+}
+
+.step3 img {
+    position: absolute;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+
+.infoBlock h2 {
+    position: relative;
+    font-size: 30px;
+    line-height: 50px;
+    color: #212428;
+    padding-left: 380px;
+}
+
+.infoBlock h1 {
+    display: block;
+    position: relative;
+    font-size: 77px;
+    line-height: 62px;
+    color: #73b6cc;
+}
+
+.infoBlock span {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    line-height: 25px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.step1 span {
+    float: left;
+    padding-left: 200px;
+}
+
+.step2 span {
+    float: right;
+    padding-right: 100px;
+}
+
+.step3 span {
+    float: left;
+    padding-left: 200px;
+}
+
+.infoBlock p {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+}
+
+.portfolio h1 {
+    font-size: 24px;
+    line-height: 50px;
+    color: #212428;
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.container .border1 {
+    position: absolute;
+    padding-top: 80px;
+}
+
+.container .aboutStat {
+    width: 25%;
+    float: left;
+    padding: 105px 110px;
+}
+
+.aboutStat .name {
+    margin-left: -15px;
+    font-size: 17px;
+    line-height: 46px;
+    color: #ffffff;
+}
+
+.aboutStat .number {
+    margin-left: -25px;
+    font-size: 33px;
+    line-height: 46px;
+    color: #ffffff;
+}
+
+.portfolio p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.list h3 {
+    font-size: 17px;
+    line-height: 25px;
+    color: #a5345c;
+}
+
+.list p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+    text-align: left;
+}
+
+.list1 .item {
+    height: 230px;
+    width: 33.3333%;
+    float: left;
+    display: inline;
+}
+
+.list2 .item {
+    height: 230px;
+    width: 33.3333%;
+    float: left;
+    display: inline;
+    margin-top: 60px;
+}
+
+.partProgram {
+    float: left;
+}
+
+.vipProgram {
+    float: right;
+    text-align: right;
+}
+
+.payment {
+    height: 330px;
+}
+
+.payment li {
+    position: relative;
+    display: inline-block;
+    margin-left: 85px;
+    padding-top: 140px;
+}
+
+.payment .border {
+    position: absolute;
+    padding-top: 100px;
+}
+
