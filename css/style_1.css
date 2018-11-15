@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "GothamPro";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 50px;
+    background-color: #fff;
+}
+
+.titHead,
+.fon,
+.info,
+footer {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: no-repeat center;
+}
+
+.titHead {
+    height: 335px;
+    margin-bottom: -51px;
+}
+
+.fon {
+    height: 50px;
+}
+
+.info {
+    height: 465px;
+}
+
+footer {
+    height: 510px;
+}
+
+header .contacts a {
+    font-size: 20px;
+    line-height: 36px;
+    color: #212428;
+    text-decoration: none;
+}
+
+.logoTit {
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.unite {
+    padding-top: 45px;
+}
+
+.title {
+    font-size: 27px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.beInvest {
+    font-size: 45px;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.logoSlider li a {
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.logoSlider li a:hover {
+    color: #63a6bc;
+}
+
+.logoSlider li {
+    display: inline-block;
+    margin-right: 30px;
+    float: left;
+}
+
+.logoSlider {
+    float: right;
+}
+
+.title {
+    margin-left: 90px;
+    margin-top: -65px;
+}
+
+form button:nth-child(1) {
+    font-size: 15px;
+    line-height: 27px;
+    color: #68daff;
+    border-color: #68daff;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+form button:nth-child(1):hover {
+    background-color: blue;
+}
+
+form button:nth-child(2) {
+    font-size: 15px;
+    line-height: 27px;
+    color: #db4472;
+    border-color: #db4472;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+form button:nth-child(2):hover {
+    background-color: red;
+}
+
+.forms {
+    padding-top: 60px;
+}
+
+.forms .beInvest {
+    float: left;
+}
+
+.forms form {
+    float: right;
+}
+
+.fon {
+    height: 50px;
+}
+
+.currency li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.currency {
+    padding-left: 50px;
+}
+
+.currency li span:first-child {
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.currency li span:last-child {
+    font-size: 13px;
+    line-height: 24px;
+    color: #b0b0b0;
+}
+
+.currency li span .blue {
+    color: #63a6bc;
+}
+
+.currency li span .red {
+    color: #a5345c;
+}
+
+.info p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #54565a;
+    padding-top: 120px;
+}
+
+.info h1 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #212428;
+    padding-top: 90px;
+    padding-left: 425px;
+}
+
+.menu li a {
+    font-size: 17px;
+    line-height: 27px;
+    color: #212428;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.infoPart .text {
+    font-size: 17px;
+    line-height: 27px;
+    color: #54565a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.payment {
+    height: 330px;
+}
+
+.payment li {
+    position: relative;
+    display: inline-block;
+    margin-left: 85px;
+    padding-top: 140px;
+}
+
+.payment .border {
+    position: absolute;
+    padding-top: 100px;
+}
+
+.license {
+    display: table;
+    width: 50%;
+    float: left;
+}
+
+.license .licence {
+    position: relative;
+    padding-top: 100px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.license .licenceLogo {
+    position: relative;
+    padding-top: 100px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.contacts {
+    display: table;
+    width: 50%;
+    float: left;
+}
+
+.contacts .aboutComp{
+    padding-top: 50px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.contacts .contactComp{
+    padding-top: 50px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.copyrightComp .copyright {
+    display: block;
+    float: left;
+}
+
+.copyrightComp .social {
+    display: block;
+    float: right;
+}
+
+.licenceLogo .logoTF img {
+    display: block;
+    float: left;
+}
+
+.licenceLogo .logoTF span {
+    display: block;
+    float: left;
+    font-size: 27px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.licenceLogo .address span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #bdbdbd;;
+}
+
+.licenceLogo .address h3 {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.licenceLogo .address  .registrationN {
+    padding-top: 100px;
+}
+
+.address .checkReg {
+    padding-top: 80px;
+}
+
+.checkReg button {
+    font-size: 15px;
+    line-height: 27px;
+    color: #68daff;
+    border-color: #68daff;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.checkReg button:hover {
+    background-color: blue;
+}
+
+.contacts .aboutComp h3 {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.contacts .aboutComp li {
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    color: #bdbdbd;
+}
+
+.contacts .contactComp h3 {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.contacts .contactComp li {
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    color: #bdbdbd;
+}
+
+.contacts img {
+    position: absolute;
+}
+
+.copyright p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #bdbdbd;
+}
+
+.copyright span {
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.contactComp li span {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.contactComp li a {
+    font-size: 13px;
+    line-height: 25px;
+    color: #73b6cc;
+}

@@ -396,6 +396,14 @@ form button:nth-child(2):hover {
     color: #b0b0b0;
 }
 
+.currency li span .blue {
+    color: #63a6bc;
+}
+
+.currency li span .red {
+    color: #a5345c;
+}
+
 .info {
     height: 670px;
 }
@@ -681,67 +689,108 @@ form button:nth-child(2):hover {
     height: 815px;
 }
 
-.step1 img {
-    position: absolute;
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-
-.step2 img {
-    position: absolute;
-    padding-left: 180px;
-    padding-bottom: 50px;
-}
-
-.step3 img {
-    position: absolute;
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-
 .infoBlock h2 {
-    position: relative;
+    display: block;
     font-size: 30px;
     line-height: 50px;
     color: #212428;
-    padding-left: 380px;
+    padding: 120px 300px;
+    text-transform: uppercase;
 }
 
-.infoBlock h1 {
-    display: block;
+.information .step {
     position: relative;
+    padding: 0 140px;
+}
+
+.information .step .in {
+    position: relative;
+    padding: 38px 24px 0 33px;
+    min-height: 140px;
+    background-color: #f2f2f2;
+}
+
+.information .step .titleStep {
+    display: block;
+    width: 230px;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.information .step.left .titleStep {
+    float: left;
+}
+
+.information .step.right .titleStep {
+    float: right;
+    text-align: right;
+}
+
+.information p a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #a5345c;
+}
+
+.information .step .num {
+    position: absolute;
+    display: block;
+    top: 0;
     font-size: 77px;
-    line-height: 62px;
+    font-weight: bold;
     color: #73b6cc;
 }
 
-.infoBlock span {
+.information .step.left .num {
+    left: 0;
+}
+
+.information .step.right .num {
+    right: 0;
+}
+
+.information .step .in .mark {
+    position: absolute;
     display: block;
-    position: relative;
-    font-size: 17px;
-    line-height: 25px;
-    color: #212428;
-    font-weight: bold;
+    top: 38px;
+    width: 35px;
+    height: 25px;
+    background-color: #a5345c;
 }
 
-.step1 span {
-    float: left;
-    padding-left: 200px;
-}
-
-.step2 span {
-    float: right;
-    padding-right: 100px;
-}
-
-.step3 span {
-    float: left;
-    padding-left: 200px;
-}
-
-.infoBlock p {
+.information .step .in .mark::before {
+    content: '';
     display: block;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #a5345c;
+}
+
+.information .step.left .in .mark::before {
+    right: 100%;
+    border-left: 9px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.information .step.right .in .mark::before {
+    left: 100%;
+    border-left: 9px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.information .step.left .in .mark {
+    left: -21px;
+}
+
+.information .step.right .in .mark {
+    right: -21px;
+}
+
+.descr p {
     font-size: 15px;
     line-height: 22px;
     color: #54565a;
@@ -842,3 +891,164 @@ form button:nth-child(2):hover {
     padding-top: 100px;
 }
 
+.license {
+    display: table;
+    width: 50%;
+    float: left;
+}
+
+.license .licence {
+    position: relative;
+    padding-top: 100px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.license .licenceLogo {
+    position: relative;
+    padding-top: 100px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.contacts {
+    display: table;
+    width: 50%;
+    float: left;
+}
+
+.contacts .aboutComp{
+    padding-top: 50px;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.contacts .contactComp{
+    padding-top: 50px;
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.copyrightComp .copyright {
+    display: block;
+    float: left;
+}
+
+.copyrightComp .social {
+    display: block;
+    float: right;
+}
+
+.licenceLogo .logoTF img {
+    display: block;
+    float: left;
+}
+
+.licenceLogo .logoTF span {
+    display: block;
+    float: left;
+    font-size: 27px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.licenceLogo .address span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #bdbdbd;;
+}
+
+.licenceLogo .address h3 {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.licenceLogo .address  .registrationN {
+    padding-top: 100px;
+}
+
+.address .checkReg {
+    padding-top: 80px;
+}
+
+.checkReg button {
+    font-size: 15px;
+    line-height: 27px;
+    color: #68daff;
+    border-color: #68daff;
+    background: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.checkReg button:hover {
+    background-color: blue;
+}
+
+.contacts .aboutComp h3 {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.contacts .aboutComp li {
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    color: #bdbdbd;
+}
+
+.contacts .contactComp h3 {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.contacts .contactComp li {
+    display: block;
+    font-size: 13px;
+    line-height: 25px;
+    color: #bdbdbd;
+}
+
+.copyright p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #bdbdbd;
+}
+
+.copyright span {
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.contactComp li span {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.contactComp li a {
+    font-size: 13px;
+    line-height: 25px;
+    color: #73b6cc;
+}
