@@ -74,12 +74,55 @@ footer {
     height: 510px;
 }
 
+header {
+    display: table;
+    width: 100%;
+    float: left;
+}
+
+header .item {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    height: 50px;
+}
+
+header .lang {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+header .contacts {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+header .clock {
+    padding: 0 10px;
+}
+
+header .date {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+}
+
+header .time {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
 header .contacts a {
     position: relative;
     font-size: 20px;
     line-height: 36px;
     color: #212428;
-    margin-left: 10px;
+    margin-left: 40px;
     text-decoration: none;
 }
 
@@ -817,6 +860,8 @@ form button:nth-child(2):hover {
     padding-top: 120px;
     padding-left: 100px;
     padding-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .container .border1 {
@@ -1065,4 +1110,89 @@ form button:nth-child(2):hover {
     font-size: 13px;
     line-height: 25px;
     color: #73b6cc;
+}
+
+@media (max-width: 1198px) {
+    .container {
+        width: 980px;
+    }
+
+    .titHead {
+        width: 980px;
+        height: 880px;
+        margin-bottom: -51px;
+    }
+
+    .fon {
+        width: 980px;
+        height: 50px;
+    }
+
+    .item {
+        width: 980px;
+        height: 560px;
+    }
+
+    .partner {
+        width: 980px;
+        height: 640px;
+    }
+
+    .statistic {
+        width: 980px;
+        height: 360px;
+    }
+
+    .portfolio {
+        width: 980px;
+        height: 950px;
+    }
+
+    footer {
+        width: 980px;
+        height: 510px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 780px;
+
+    }
+
+    .titHead {
+        width: 100%;
+        height: 880px;
+        margin-bottom: -51px;
+    }
+
+    .fon {
+        width: 100%;
+        height: 50px;
+    }
+
+    .item {
+        width: 100%;
+        height: 560px;
+    }
+
+    .partner {
+        width: 100%;
+        height: 640px;
+    }
+
+    .statistic {
+        width: 100%;
+        height: 360px;
+    }
+
+    .portfolio {
+        width: 100%;
+        height: 950px;
+    }
+
+    footer {
+        width: 100%;
+        height: 510px;
+    }
 }

@@ -600,10 +600,216 @@ form button:nth-child(2):hover {
     text-transform: uppercase;
 }
 
+.oficeProg {
+    height: 1400px;
+}
 
+.steps {
+    padding-top: 100px;
+    display: table;
+    width: 100%;
+    float: left;
+}
 
+.steps .stepOffice {
+    display: block;
+    width: 33.3333%;
+    float: left;
+}
 
+.steps .logo {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    padding: 0px 35px;
+}
 
+.steps .stepOffice1 {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+.stepOffice img {
+    position: absolute;
+    display: block;
+}
+
+.stepOffice p {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    padding-left: 70px;
+}
+
+.stepOffice .textBold {
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.stepOffice .numberOf {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.stepOffice1 img {
+    position: absolute;
+    display: block;
+}
+
+.stepOffice1 p {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    padding-left: 70px;
+}
+
+.stepOffice1 .textBold {
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.stepOffice1 .numberOf1 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.infoOffice p {
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+    padding-top: 480px;
+}
+
+.informationOffice h2 {
+    position: relative;
+    display: block;
+    padding-top: 100px;
+    padding-left: 320px;
+    font-size: 30px;
+    line-height: 27px;
+    color: #a5345c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.information .step {
+    position: relative;
+    padding: 0 140px;
+}
+
+.information {
+    position: relative;
+    padding-top: 70px;
+}
+
+.information .step .in {
+    position: relative;
+    padding: 38px 24px 0 33px;
+    min-height: 110px;
+    background-color: #ffffff;
+}
+
+.information .step + .step {
+    margin-top: 20px;
+}
+
+.information .step .titleStep {
+    display: block;
+    width: 230px;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.information p span {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #212428;
+}
+
+.information .step .num {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-size: 77px;
+    font-weight: bold;
+    color: #73b6cc;
+}
+
+.information .step.left .num {
+    left: 0;
+}
+
+.information .step.right .num {
+    right: 0;
+}
+
+.information .step .in .mark {
+    position: absolute;
+    display: block;
+    top: 38px;
+    width: 35px;
+    height: 25px;
+    background-color: #a5345c;
+}
+
+.information .step .in .mark::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #a5345c;
+}
+
+.information .step.left .in .mark::before {
+    right: 100%;
+    border-left: 9px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.information .step.right .in .mark::before {
+    left: 100%;
+    border-left: 0px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.information .step.left .in .mark {
+    left: -21px;
+}
+
+.information .step.right .in .mark {
+    right: -21px;
+}
+
+.descr p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+}
 
 
 

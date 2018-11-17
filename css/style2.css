@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "GothamPro";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    width: 1950px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.withdrawal {
+    display: table;
+    width: calc(100% - 375px);
+    float: left;
+}
+
+.withdrawal .headMenu {
+    display: block;
+    width: 1575px;
+    float: right;
+}
+
+.withdrawal .content {
+    display: block;
+    width: 1560px;
+    float: right;
+}
+
+.withdrawal .footMenu {
+    display: block;
+    width: 360px;
+    float: left;
+}
+
