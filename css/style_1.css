@@ -59,10 +59,54 @@ footer {
     height: 510px;
 }
 
+header {
+    display: table;
+    width: 100%;
+    float: left;
+}
+
+header .item {
+    display: block;
+    width: 33.3333%;
+    float: left;
+}
+
+header .lang {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+header .contacts {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+header .clock {
+    padding: 0 10px;
+}
+
+header .date {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+}
+
+header .time {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
 header .contacts a {
+    position: relative;
     font-size: 20px;
     line-height: 36px;
     color: #212428;
+    margin-left: 40px;
     text-decoration: none;
 }
 
@@ -201,7 +245,7 @@ form button:nth-child(2):hover {
     font-size: 17px;
     line-height: 27px;
     color: #54565a;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 
 .info h1 {
@@ -226,11 +270,338 @@ form button:nth-child(2):hover {
     margin-left: 100px;
 }
 
+.manyLevel {
+    height: 800px;
+}
+
+.infoPart .text:nth-child(1) {
+    font-size: 17px;
+    line-height: 27px;
+    color: #54565a;
+    padding-top: 90px;
+}
+
 .infoPart .text {
     font-size: 17px;
     line-height: 27px;
     color: #54565a;
 }
+
+.program {
+    display: table;
+    width: 100%;
+    float: left;
+    padding-top: 100px;
+}
+
+.program .partProgram {
+    display: block;
+    width: 33.3333%;
+    float: left;
+}
+
+.program .logo {
+    display: block;
+    width: 33.3333%;
+    float: left;
+}
+
+.program .vipProgram {
+    display: block;
+    width: 33.3333%;
+    float: right;
+}
+
+.partProgram h4 {
+    font-size: 20px;
+    line-height: 27px;
+    color: #a5345c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.partProgram img {
+    position: relative;
+    margin-top: 25px;
+}
+
+.partProgram li span {
+    position: absolute;
+    font-size: 40px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-left: -75px;
+    padding-top: 45px;
+}
+
+.partProgram li .partPercent {
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.partProgram .text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+    padding-top: 35px;
+}
+
+.partProgram .text span {
+    font-size: 15px;
+    line-height: 22px;
+    color: #a5345c;
+    font-weight: bold;
+}
+
+.vipProgram h4 {
+    float: right;
+    font-size: 20px;
+    line-height: 27px;
+    color: #a5345c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vipProgram img {
+    position: relative;
+    margin-top: 25px;
+    padding-left: 290px;
+}
+
+.vipProgram li .percent {
+    position: absolute;
+    font-size: 40px;
+    line-height: 27px;
+    color: #ffffff;
+    margin-left: 310px;
+    margin-top: -55px;
+}
+
+.vipProgram li .partPercent_1 {
+    position: absolute;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+    margin-top: -55px;
+    text-align: right;
+}
+
+.vipProgram .text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #54565a;
+    padding-top: 35px;
+    text-align: right;
+}
+
+.vipProgram .text span {
+    font-size: 15px;
+    line-height: 22px;
+    color: #a5345c;
+    font-weight: bold;
+}
+
+.bonusProg {
+    height: 930px;
+}
+
+.infoBonus p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #54565a;
+    padding-top: 90px;
+}
+
+.fonBonus {
+    margin-top: 90px;
+    height: 600px;
+}
+
+.menuBonus {
+    width: calc(100% - 970px);
+    float: left;
+}
+
+.menuBonus li {
+    display: block;
+    font-size: 17px;
+    line-height: 70px;
+    color: #212428;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menuBonus {
+    padding-left: 30px;
+}
+
+.invest {
+    display: table;
+    width: 970px;
+}
+
+.invest .deposit {
+    display: block;
+    width: 50%;
+    float: left;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+.deposit h1 {
+    font-size: 20px;
+    line-height: 27px;
+    color: #a5345c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.deposit li .depositLevel {
+    position: absolute;
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+    padding-left: 120px;
+    margin-top: -5px;
+}
+
+.deposit li .level {
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-top: -5px;
+}
+
+.deposit img {
+    position: absolute;
+    margin-top: -20px;
+
+}
+
+.deposit li {
+    padding-top: 60px;
+}
+
+.invest .forexBonus {
+    display: block;
+    width: 50%;
+    float: right;
+    padding-left: 50px;
+}
+
+.buttonBonus {
+    height: 120px;
+    width: 390px;
+    padding-top: 50px;
+}
+
+.buttonBonus img {
+    position: absolute;
+    display: block;
+}
+
+.buttonBonus .textBonus {
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: -50px;
+    padding-left: 80px;
+    text-align: center;
+}
+
+.buttonBonus span {
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.buttonBonus1 {
+    height: 120px;
+    width: 390px;
+    padding-top: 70px;
+}
+
+.buttonBonus1 img {
+    position: absolute;
+    display: block;
+}
+
+.buttonBonus1 .textBonus1 {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.buttonBonus1 span {
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.forexFried {
+    display: block;
+    padding-top: 100px;
+}
+
+.forexFried h1 {
+    text-align: right;
+    font-size: 20px;
+    line-height: 27px;
+    color: #a5345c;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.forexFried li {
+    padding-top: 44px;
+}
+
+.forexFried img {
+    position: absolute;
+}
+
+.forexFried span {
+    position: relative;
+    font-size: 15px;
+    line-height: 22px;
+    color: #212428;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.forexFried li .level {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
 
 
 

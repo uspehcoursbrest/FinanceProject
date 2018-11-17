@@ -75,9 +75,11 @@ footer {
 }
 
 header .contacts a {
+    position: relative;
     font-size: 20px;
     line-height: 36px;
     color: #212428;
+    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -459,6 +461,14 @@ form button:nth-child(2):hover {
     color: #63a6bc;
     background: none;
     border-color: #63a6bc;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: blue;
 }
 
 .buttons button:nth-child(2) {
@@ -694,7 +704,7 @@ form button:nth-child(2):hover {
     font-size: 30px;
     line-height: 50px;
     color: #212428;
-    padding: 120px 300px;
+    padding: 70px 300px;
     text-transform: uppercase;
 }
 
@@ -708,6 +718,10 @@ form button:nth-child(2):hover {
     padding: 38px 24px 0 33px;
     min-height: 140px;
     background-color: #f2f2f2;
+}
+
+.information .step + .step {
+    margin-top: 50px;
 }
 
 .information .step .titleStep {
@@ -778,8 +792,8 @@ form button:nth-child(2):hover {
 
 .information .step.right .in .mark::before {
     left: 100%;
-    border-left: 9px solid transparent;
-    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 9px solid transparent;
 }
 
 .information .step.left .in .mark {
