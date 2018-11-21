@@ -13,141 +13,155 @@
 <body>
 <div class="container">
     <div class="withdrawal clear">
-        <header>
-            <div class="headMenu clear">
-                <div class="item clock clear">
-                    <span class="iconLeft" style="background-image: url(img/png/time.png);"></span>
-                    <span class="time" id="time">20:35:50</span>
-                    <span class="date" id="date">25 Фев 2018</span>
-                    <span class="weekday" id="weekday">Четверг</span>
-                </div>
-                <div class="lang">
-                    <div class="language">
-                        <span></span>
+        <div class="withInfo">
+            <header>
+                <div class="headMenu clear">
+                    <div class="item clock clear">
+                        <span class="iconLeft" style="background-image: url(img/png/time.png);"></span>
+                        <span class="time" id="time">20:35:50</span>
+                        <span class="date" id="date">25 Фев 2018</span>
+                        <span class="weekday" id="weekday">Четверг</span>
                     </div>
-                    <div class="social">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                    <div class="lang clear">
+                        <div class="language">
+                            <span></span>
+                        </div>
+                        <div class="social">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="contacts clear">
+                        <a href="#"><img src="img/svg/1.svg" alt=""></a>
+                        <a href="#"><img src="img/svg/2.svg" alt=""></a>
+                        <a href="tel:+ 8 800 123-45-67">+ 8 800 123-45-67</a>
+                    </div>
+                    <div class="persCab clear">
+                        <img src="img/png/person.png" alt="">
+                        <span>Добро пожаловать,</span>
+                        <a href="#">Ivanovskiy4590</a>
                     </div>
                 </div>
-                <div class="contacts clear">
-                    <a href="#"><img src="img/svg/1.svg" alt=""></a>
-                    <a href="#"><img src="img/svg/2.svg" alt=""></a>
-                    <a href="tel:+ 8 800 123-45-67">+ 8 800 123-45-67</a>
+            </header>
+            <div class="content clear" style="background-image: url(img/jpg/fon_with.jpg)">
+                <div class="iconFon">
+                    <img src="img/png/withdrawal.png" alt="">
                 </div>
-                <div class="persCab">
-                    <img src="" alt="">
-                    <span>Добро пожаловать,</span>
-                    <a href="#">Ivanovskiy4590</a>
+                <h2>Вывести средства</h2>
+                <div class="selectForex">
+                    <span>01.</span>
+                    <span>Укажите валюту:</span>
+                    <div class="order">
+                        <input class="radioBtn" type="radio" name="RUB" id="RUB" checked>
+                        <label for="RUB">RUB</label>
+                        <input class="radioBtn" type="radio" name="USD" id="USD" checked>
+                        <label for="USD">USD</label>
+                        <input class="radioBtn" type="radio" name="EUR" id="EUR" checked>
+                        <label for="EUR">EUR</label>
+                        <input class="radioBtn" type="radio" name="KTZ" id="KTZ" checked>
+                        <label for="KTZ">KTZ</label>
+                        <input class="radioBtn" type="radio" name="UAH" id="UAH" checked>
+                        <label for="UAH">UAH</label>
+                        <input class="radioBtn" type="radio" name="BTC" id="BTC" checked>
+                        <label for="BTC">BTC</label>
+                        <input class="radioBtn" type="radio" name="ETH" id="ETH" checked>
+                        <label for="ETH">ETH</label>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div class="content clear">
-            <h2>Вывести средства</h2>
-            <div class="selectForex">
-                <span>01.</span>
-                <span>Укажите валюту:</span>
-                <div class="order">
-                    <input class="radioBtn" type="radio" name="RUB" id="RUB" checked>
-                    <label for="RUB">RUB</label>
-                    <input class="radioBtn" type="radio" name="USD" id="USD" checked>
-                    <label for="USD">USD</label>
-                    <input class="radioBtn" type="radio" name="EUR" id="EUR" checked>
-                    <label for="EUR">EUR</label>
-                    <input class="radioBtn" type="radio" name="KTZ" id="KTZ" checked>
-                    <label for="KTZ">KTZ</label>
-                    <input class="radioBtn" type="radio" name="UAH" id="UAH" checked>
-                    <label for="UAH">UAH</label>
-                    <input class="radioBtn" type="radio" name="BTC" id="BTC" checked>
-                    <label for="BTC">BTC</label>
-                    <input class="radioBtn" type="radio" name="ETH" id="ETH" checked>
-                    <label for="ETH">ETH</label>
+                <div class="selectPayment">
+                    <span>02.</span>
+                    <span>Выберите ЭПС:</span>
+                    <ul class="payIcon">
+                        <li><a href=""><img src="img/png/perfect_money1.png" alt=""></a></li>
+                        <li><a href=""><img src="img/png/payeer1.png" alt=""></a></li>
+                        <li><a href=""><img src="img/png/bitcoin1.png" alt=""></a></li>
+                        <li><a href=""><img src="img/png/advcash1.png" alt=""></a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="selectPayment">
-                <span>02.</span>
-                <span>Выберите ЭПС:</span>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-            </div>
-            <div class="inputSum">
-                <span>03.</span>
-                <span>Введите сумму вывода:</span>
-                <div class="radio">
-                    <input type="text" name="radio" id="radio">
-                    <label for="radio"></label>
+                <div class="inputSum">
+                    <span>03.</span>
+                    <span>Введите сумму вывода:</span>
+                    <div class="radio">
+                        <input type="text" placeholder="250" name="radio" id="radio">
+                        <label for="radio"></label>
+                    </div>
+                    <p>- Заказать выплату можно по пятницам с 00:00 по 23:00 <br>
+                        - Минимальная сумма выплат составляет 50$ <br>
+                        - Комиссия за вывод средств составляет до 50$ - 0%, от 50% - 3% <br>
+                        - Вывод осуществляется в течении 5 рабочих дней</p>
                 </div>
-                <p>- Заказать выплату можно по пятницам с 00:00 по 23:00 <br>
-                    - Минимальная сумма выплат составляет 50$ <br>
-                    - Комиссия за вывод средств составляет до 50$ - 0%, от 50% - 3% <br>
-                    - Вывод осуществляется в течении 5 рабочих дней</p>
-            </div>
-            <div class="balance">
-                <div class="yourBalance">
-                    <span>у вас на балансе:</span>
-                    <span>1280$</span>
+                <div class="balance">
+                    <div class="yourBalance">
+                        <span>у вас на балансе:</span>
+                        <span>1280$</span>
+                    </div>
+                    <div class="received">
+                        <span>сумма к получению:</span>
+                        <span>238$</span>
+                    </div>
+                    <div class="commissionWith">
+                        <span>комиссия:</span>
+                        <span>12$</span>
+                    </div>
                 </div>
-                <div class="received">
-                    <span>сумма к получению</span>
-                    <span>238$</span>
+                <div class="commission">
+                    <span>Комиссии на пополнение баланса и на вывод денежных средств</span>
                 </div>
-                <div class="commissionWith">
-                    <span>комиссия</span>
-                    <span>12$</span>
+                <div class="butWith">
+                    <button>вывести</button>
                 </div>
-            </div>
-            <div class="commission">
-                <span>Комиссии на пополнение баланса и на вывод денежных средств</span>
-            </div>
-            <div class="butWith">
-                <button>вывести</button>
             </div>
         </div>
         <footer>
-            <div class="footMenu clear">
+            <div class="footMenu clear" style="background-image: url(img/jpg/fon_menu.jpg)">
                 <div class="logoWith">
-                    <img src="" alt="">
+                    <img src="img/png/logo_3.png" alt="">
                 </div>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-                <ul>
-                    <li>кабинет</li>
-                    <li>открыть вклад</li>
-                    <li>мои депозиты</li>
-                    <li>калькудятор инвестора</li>
-                    <li>операции</li>
-                    <li>партнеры</li>
-                    <li>верификация личности</li>
-                    <li>личные данные</li>
-                    <li>платежные реквизиты</li>
-                    <li>безопасность</li>
-                    <li>рекламные материалы</li>
-                    <li>бонусы и привилегии</li>
-                    <li>видео обучение</li>
-                    <li>выход</li>
-                </ul>
-                <div class="licenceWith">
-                    <p>© 2018 Trade Finance. Все права защищены.</p>
+                <div class="titWith">
+                    <span>trade<br> finance</span>
+                </div>
+                <div class="leftMenu">
+                    <div class="pictureMenu">
+                        <ul>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>кабинет</li>
+                            <li>открыть вклад</li>
+                            <li>мои депозиты</li>
+                            <li>калькудятор инвестора</li>
+                            <li>операции</li>
+                            <li>партнеры</li>
+                            <li>верификация личности</li>
+                            <li>личные данные</li>
+                            <li>платежные реквизиты</li>
+                            <li>безопасность</li>
+                            <li>рекламные материалы</li>
+                            <li>бонусы и привилегии</li>
+                            <li>видео обучение</li>
+                            <li>выход</li>
+                        </ul>
+                    </div>
+                    <div class="licenceWith">
+                        <p>© 2018 Trade Finance. Все права защищены.</p>
+                    </div>
                 </div>
             </div>
         </footer>

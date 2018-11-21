@@ -17,9 +17,9 @@ ul {
 }
 
 .container {
-    width: 1950px;
+    width: 1440px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0;
 }
 
 .clear::after{
@@ -28,27 +28,415 @@ ul {
     clear: both;
 }
 
-.withdrawal {
+.container {
     display: table;
-    width: calc(100% - 375px);
+    width: 100%;
     float: left;
 }
 
-.withdrawal .headMenu {
+.container .withInfo {
     display: block;
-    width: 1575px;
+    width: 80%;
     float: right;
 }
 
-.withdrawal .content {
+.container .footMenu {
     display: block;
-    width: 1560px;
-    float: right;
-}
-
-.withdrawal .footMenu {
-    display: block;
-    width: 360px;
+    width: 20%;
     float: left;
 }
 
+header {
+    display: table;
+    width: 100%;
+    float: left;
+}
+
+header .item {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+header .lang {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+header .contacts {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+header .persCab {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.content {
+    height: 840px;
+    margin-top: 130px;
+}
+
+.iconFon img {
+    position: absolute;
+    width: 1100px;
+    height: 700px;
+    margin-left: 30px;
+    margin-top: 95px;
+}
+
+.content h2 {
+    position: relative;
+    font-size: 24px;
+    line-height: 27px;
+    color: #212428;
+    font-weight: bold;
+    padding-top: 92px;
+    padding-left: 85px;
+    text-transform: uppercase;
+}
+
+.selectForex span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.selectForex span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.selectForex .order {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.order label {
+    position: relative;
+    padding-top: 7px;
+    padding-left: 40px;
+    margin-left: 15px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked)+label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.radioBtn:not(checked)+label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #a5345c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.radioBtn:checked+label::before {
+    border-color: #a3a3a3;
+}
+
+.radioBtn:checked+label::after {
+    opacity: 1;
+}
+
+.radioBtn+label {
+    cursor: pointer;
+}
+
+.selectPayment span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.selectPayment span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.payIcon {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.selectPayment li {
+    position: relative;
+    display: inline;
+}
+
+.selectPayment li img {
+    position: relative;
+    width: 250px;
+    height: 90px;
+    padding-left: 20px;
+}
+
+.inputSum span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 21px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.inputSum span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+}
+
+.inputSum .radio {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.inputSum p {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+    color: #212428;
+    float: right;
+    margin-top: -60px;
+    margin-right: 270px;
+}
+
+.balance {
+    display: table;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+}
+
+.balance .yourBalance {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    padding-left: 100px;
+}
+
+.balance .received {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    padding-left: 80px;
+}
+
+.balance .commissionWith {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    padding-left: 80px;
+}
+
+.yourBalance span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.yourBalance span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 36px;
+    color: #73b6cc;
+    font-weight: bold;
+}
+
+.received span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.received span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 36px;
+    color: #73b6cc;
+    font-weight: bold;
+}
+
+.commissionWith span:nth-child(1) {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.commissionWith span:nth-child(2) {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 36px;
+    color: #73b6cc;
+    font-weight: bold;
+}
+
+.commission span {
+    position: relative;
+    display: block;
+    font-size: 17px;
+    line-height: 36px;
+    color: #a5345c;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.butWith button {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    padding-top: 45px;
+    margin-right: 120px;
+}
+
+.footMenu {
+    height: 1080px;
+}
+
+.footMenu img {
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.footMenu .titWith {
+    position: relative;
+    font-size: 27px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 120px;
+    margin-top: -65px;
+}
+
+.leftMenu {
+    display: table;
+    width: 100%;
+    float: left;
+}
+
+.leftMenu .pictureMenu {
+    display: block;
+    width: 22%;
+    float: left;
+}
+
+.leftMenu .menu {
+    display: block;
+    width: 78%;
+    float: left;
+    padding-top: 40px;
+}
+
+.pictureMenu li {
+    
+}
+
+.menu li {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.licenceWith p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #bdbdbd;
+    padding-left: 35px;
+    padding-top: 55px;
+}

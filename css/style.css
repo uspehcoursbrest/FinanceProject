@@ -1112,6 +1112,21 @@ form button:nth-child(2):hover {
     color: #73b6cc;
 }
 
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    font-size: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid rgb(234, 142, 10, 0);
+    color: #73b6cc;
+    outline: none;
+    background-color: #a5345c;
+}
+
 @media (max-width: 1198px) {
     .container {
         width: 980px;
