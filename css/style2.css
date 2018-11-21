@@ -77,14 +77,14 @@ header .persCab {
 }
 
 .content {
-    height: 840px;
+    height: 950px;
     margin-top: 130px;
 }
 
 .iconFon img {
     position: absolute;
     width: 1100px;
-    height: 700px;
+    height: 800px;
     margin-left: 30px;
     margin-top: 95px;
 }
@@ -107,7 +107,7 @@ header .persCab {
     line-height: 36px;
     color: #212428;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left: 100px;
 }
 
@@ -198,7 +198,7 @@ header .persCab {
     line-height: 36px;
     color: #212428;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left: 100px;
 }
 
@@ -214,7 +214,7 @@ header .persCab {
 .payIcon {
     position: relative;
     padding-left: 80px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .selectPayment li {
@@ -236,7 +236,7 @@ header .persCab {
     line-height: 36px;
     color: #212428;
     font-weight: bold;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-left: 100px;
 }
 
@@ -360,7 +360,7 @@ header .persCab {
     color: #a5345c;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 150px;
+    padding-top: 170px;
     padding-left: 100px;
 }
 
@@ -374,8 +374,8 @@ header .persCab {
     text-transform: uppercase;
     background: none;
     border: none;
-    padding-top: 45px;
-    margin-right: 120px;
+    padding-top: 40px;
+    margin-right: 140px;
 }
 
 .footMenu {
@@ -410,6 +410,7 @@ header .persCab {
     display: block;
     width: 22%;
     float: left;
+    padding-top: 30px;
 }
 
 .leftMenu .menu {
@@ -420,7 +421,8 @@ header .persCab {
 }
 
 .pictureMenu li {
-    
+    margin-top: -4px;
+    margin-left: -15px;
 }
 
 .menu li {
@@ -433,10 +435,13 @@ header .persCab {
     text-transform: uppercase;
 }
 
-.licenceWith p {
+.leftMenu .licenceWith {
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.licenceWith span {
     font-size: 13px;
     line-height: 18px;
     color: #bdbdbd;
-    padding-left: 35px;
-    padding-top: 55px;
 }
