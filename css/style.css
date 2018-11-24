@@ -356,7 +356,7 @@ form button:nth-child(2):hover {
     margin-top: -8px;
 }
 
-.calcForm .radio {
+.calcForm .radio1 {
     position: relative;
     width: 33.3333%;
     float: left;
@@ -1281,35 +1281,33 @@ form button:nth-child(2):hover {
     }
 }
 
+.calculator .range {
+    position: absolute;
+    display: block;
+    margin-top: 250px;
+    margin-left: 300px;
+    height: 50px;
+    width: 400px;
+}
+.range .irs {
+    width: 500px;
+}
+
 .range .irs-line {
-    height: 21px;
-    -webkit-border-radius: 11px;
-    -moz-border-radius: 11px;
-    border-radius: 11px;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
-    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    width: 500px;
+    height: 4px;
+    background-color: #54565a;
 }
 
 .range .irs-bar {
-    height: 21px;
-    background-color: #44d29d;
-    -webkit-border-radius: 11px;
-    -moz-border-radius: 11px;
-    border-radius: 11px;
+    height: 4px;
+    background-color: #a5345c;
 }
 
 .range .irs-bar-edge {
-    height: 21px;
-    width: 35px;
-    background-color: #44d29d;
-    -webkit-border-top-left-radius: 11px;
-    -moz-border-radius-topleft: 11px;
-    border-top-left-radius: 11px;
-    -webkit-border-bottom-left-radius: 11px;
-    -moz-border-radius-bottomleft: 11px;
-    border-bottom-left-radius: 11px;
+    height: 4px;
+    width: 10px;
+    background-color: #a5345c;
 }
 
 .range .irs-grid {
@@ -1321,6 +1319,7 @@ form button:nth-child(2):hover {
 }
 
 .range .irs-grid .irs-grid-pol {
+    display: none;
     height: 35px;
     background-color: white;
 }
@@ -1334,14 +1333,12 @@ form button:nth-child(2):hover {
 }
 
 .range .irs-slider {
-    top: 12px;
-    width: 47px;
-    height: 47px;
-    background-color: #44d29d;
-    border: 14px solid white;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 6px solid #a5345c;
+
     -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
     box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
@@ -1349,17 +1346,17 @@ form button:nth-child(2):hover {
 }
 
 .range .irs-single {
-    top: -17px;
+    top: -10px;
     font-size: 15px;
     line-height: 24px;
-    color: white;
+    color: #a5345c;
     font-weight: bold;
     background-color: transparent;
 }
 
 .range .irs-min,
 .range .irs-max {
-    top: -17px;
+    top: 25px;
     font-size: 15px;
     line-height: 24px;
     color: white;
