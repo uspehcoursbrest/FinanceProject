@@ -30,11 +30,12 @@ window.onload = function () {
     clockStart();
 }
 
+$(document).ready(function () {
     var btnUp = $('.up');
     btnUp.hide();
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 500) {
             btnUp.fadeIn();
         }
         else {
@@ -47,3 +48,59 @@ window.onload = function () {
         }, 500);
         return false;
     })
+})
+
+$(document).ready(function () {
+
+    var ua = detect.parse(navigator.userAgent);
+    $("html").addClass(ua.browser.family);
+
+    $('select').map(function () {
+        $('select').selectric();
+    });
+
+    $('.enterNum').bind("change keyup input click", function () {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
+    });
+
+    $('#rangeSum').ionRangeSlider ({
+        grid: true,
+        min: 50,
+        max: 50000,
+        from: 500,
+        step: 100,
+        grid_num: 16,
+        grid_margin: false,
+        postfix: "$",
+        onStart: function (data) {
+            $('#radio').val(data.from);
+        },
+        onChange: function (data) {
+            $('#radio').val(data.from);
+        }
+    });
+
+    var sumRange = $('#rangeSum').data('ionRangeSlider'),
+        min = 50,
+        max = 50000;
+
+    $('#radio').on('change keyup', function () {
+        var val = $(this).prop('value');
+        if(val<min) {
+            val = min;
+        } else if (val>max) {
+            val = max;
+        }
+        sumRange.update({
+            from: val
+        });
+    })
+})
+
+$("#menuPart").tabs({
+    active: 0
+});
+
+$('select').selectric();

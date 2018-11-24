@@ -34,6 +34,7 @@ header {
 }
 
 .titHead,
+.titleHead,
 .fon,
 .item,
 .partner,
@@ -90,7 +91,7 @@ header .item {
 header .lang {
     display: block;
     width: 33.3333%;
-    float: right;
+    float: left;
 }
 
 header .contacts {
@@ -99,8 +100,13 @@ header .contacts {
     float: right;
 }
 
+header img {
+    display: inline-block;
+    padding-top: 10px;
+}
+
 header .clock {
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 header .date {
@@ -108,13 +114,58 @@ header .date {
     font-size: 12px;
     line-height: 13px;
     color: #8a8a8a;
+    padding-left: 145px;
+    margin-top: -30px;
 }
 
 header .time {
-    display: block;
+    display: inline-block;
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
+}
+
+header .weekday {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+    padding-left: 145px;
+}
+
+header .lang {
+    display: table;
+    width: 25%;
+    float: left;
+}
+
+.lang .language {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.lang .social {
+    display: block;
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+}
+
+.language img {
+    position: absolute;
+}
+
+.language select {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.language option {
+    font-size: 14px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
 }
 
 header .contacts a {
@@ -122,8 +173,8 @@ header .contacts a {
     font-size: 20px;
     line-height: 36px;
     color: #212428;
-    margin-left: 40px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .logoTit {
@@ -309,7 +360,6 @@ form button:nth-child(2):hover {
     position: relative;
     width: 33.3333%;
     float: left;
-    background: none;
     margin-left: -50px;
 }
 
@@ -401,8 +451,16 @@ form button:nth-child(2):hover {
     text-align: center;
 }
 
-.calculation span {
+.calculation .profitDay span {
     font-size: 14px;
+    line-height: 47px;
+    color: #ffffff;
+    margin-left: 140px;
+    text-transform: uppercase;
+}
+
+.calculation .profitAll span {
+    font-size: 33px;
     line-height: 47px;
     color: #ffffff;
     margin-left: 140px;
@@ -1088,10 +1146,15 @@ form button:nth-child(2):hover {
     color: #bdbdbd;
 }
 
+.copyrightComp {
+    height: 50px;
+}
+
 .copyright p {
     font-size: 13px;
     line-height: 18px;
     color: #bdbdbd;
+    padding-top: 10px;
 }
 
 .copyright span {
@@ -1112,6 +1175,10 @@ form button:nth-child(2):hover {
     color: #73b6cc;
 }
 
+.social img {
+    padding-top: 10px;
+}
+
 .up {
     position: fixed;
     left: 10px;
@@ -1121,11 +1188,13 @@ form button:nth-child(2):hover {
     width: 80px;
     border-radius: 50%;
     text-decoration: none;
-    border: 1px solid rgb(234, 142, 10, 0);
+    border: 1px solid rgb(234, 142, 10);
     color: #73b6cc;
     outline: none;
     background-color: #a5345c;
 }
+
+
 
 @media (max-width: 1198px) {
     .container {
@@ -1210,4 +1279,90 @@ form button:nth-child(2):hover {
         width: 100%;
         height: 510px;
     }
+}
+
+.range .irs-line {
+    height: 21px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+}
+
+.range .irs-bar {
+    height: 21px;
+    background-color: #44d29d;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+}
+
+.range .irs-bar-edge {
+    height: 21px;
+    width: 35px;
+    background-color: #44d29d;
+    -webkit-border-top-left-radius: 11px;
+    -moz-border-radius-topleft: 11px;
+    border-top-left-radius: 11px;
+    -webkit-border-bottom-left-radius: 11px;
+    -moz-border-radius-bottomleft: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.range .irs-grid {
+    bottom: 22px;
+}
+
+.range .irs-grid .irs-grid-text {
+    display: none;
+}
+
+.range .irs-grid .irs-grid-pol {
+    height: 35px;
+    background-color: white;
+}
+
+.range .irs-grid .irs-grid-pol:first-of-type {
+    display: none;
+}
+
+.range .irs-grid .irs-grid-pol:nth-last-child(2) {
+    display: none;
+}
+
+.range .irs-slider {
+    top: 12px;
+    width: 47px;
+    height: 47px;
+    background-color: #44d29d;
+    border: 14px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    cursor: pointer;
+}
+
+.range .irs-single {
+    top: -17px;
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.range .irs-min,
+.range .irs-max {
+    top: -17px;
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
 }

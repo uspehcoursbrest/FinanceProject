@@ -50,12 +50,14 @@ header {
     display: table;
     width: 100%;
     float: left;
+    padding-top: 15px;
 }
 
 header .item {
     display: block;
     width: 25%;
     float: left;
+    padding-left: 30px;
 }
 
 header .lang {
@@ -74,6 +76,112 @@ header .persCab {
     display: block;
     width: 25%;
     float: left;
+}
+
+header .item img {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+header .date {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+    padding-left: 145px;
+    margin-top: -30px;
+}
+
+header .time {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+header .weekday {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+    padding-left: 145px;
+}
+
+header .lang {
+    display: table;
+    width: 25%;
+    float: left;
+    padding-top: 40px;
+}
+
+.lang .language {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.lang .social {
+    display: block;
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+}
+
+.language img {
+    position: absolute;
+}
+
+.language select {
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.language option {
+    font-size: 14px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
+}
+
+header .contacts {
+    padding-top: 40px;
+}
+
+header .contacts a {
+    position: relative;
+    font-size: 20px;
+    line-height: 36px;
+    color: #212428;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .contacts img {
+    padding-left: 10px;
+}
+
+header .persCab {
+    position: relative;
+    padding-top: 15px;
+}
+
+header .persCab span {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 27px;
+    color: #54565a;
+}
+
+header .persCab a {
+    position: relative;
+    display: block;
+    padding-left: 65px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #a5345c;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .content {

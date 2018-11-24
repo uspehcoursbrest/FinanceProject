@@ -69,12 +69,13 @@ header .item {
     display: block;
     width: 33.3333%;
     float: left;
+    height: 50px;
 }
 
 header .lang {
     display: block;
     width: 33.3333%;
-    float: right;
+    float: left;
 }
 
 header .contacts {
@@ -83,8 +84,13 @@ header .contacts {
     float: right;
 }
 
+header img {
+    display: inline-block;
+    padding-top: 10px;
+}
+
 header .clock {
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 header .date {
@@ -92,13 +98,58 @@ header .date {
     font-size: 12px;
     line-height: 13px;
     color: #8a8a8a;
+    padding-left: 145px;
+    margin-top: -30px;
 }
 
 header .time {
-    display: block;
+    display: inline-block;
     font-size: 30px;
     font-weight: bold;
     line-height: 36px;
+}
+
+header .weekday {
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #8a8a8a;
+    padding-left: 145px;
+}
+
+header .lang {
+    display: table;
+    width: 25%;
+    float: left;
+}
+
+.lang .language {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.lang .social {
+    display: block;
+    width: 80%;
+    float: left;
+    padding-left: 20px;
+}
+
+.language img {
+    position: absolute;
+}
+
+.language select {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.language option {
+    font-size: 14px;
+    line-height: 36px;
+    color: #212428;
+    font-weight: bold;
 }
 
 header .contacts a {
@@ -106,8 +157,8 @@ header .contacts a {
     font-size: 20px;
     line-height: 36px;
     color: #212428;
-    margin-left: 40px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .logoTit {
@@ -256,7 +307,7 @@ form button:nth-child(2):hover {
     padding-left: 425px;
 }
 
-.menu li a {
+.menuPart li a {
     font-size: 17px;
     line-height: 27px;
     color: #212428;
@@ -265,9 +316,54 @@ form button:nth-child(2):hover {
     font-weight: bold;
 }
 
-.menu li {
+.menuPart li {
     display: inline-block;
     margin-left: 100px;
+}
+
+.info.ui-tabs {
+    padding: 0px;
+}
+
+.info.ui-tabs .ui-tabs-nav {
+    padding: 0px;
+}
+
+.info.ui-tabs .ui-tabs-nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info.ui-tabs .ui-tabs-nav li.ui-tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 15px;
+}
+
+.info.ui-tabs .ui-tabs-panel {
+    padding: 0px;
+}
+
+.info .tabs a {
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    text-decoration: none;
+    padding: 0 15px;
+    outline: none;
+    height: 45px;
+    line-height: 45px;
+}
+
+.info .tabs li.ui-tabs a,
+.info .tabs li a:hover {
+    border: none;
+    background-color: #f2fff7;
+    color: #54565a;
+    cursor: pointer;
 }
 
 .manyLevel {
@@ -811,30 +907,6 @@ form button:nth-child(2):hover {
     color: #54565a;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .payment {
     height: 330px;
 }
@@ -989,14 +1061,15 @@ form button:nth-child(2):hover {
     color: #bdbdbd;
 }
 
-.contacts img {
-    position: absolute;
+.copyrightComp {
+    height: 50px;
 }
 
 .copyright p {
     font-size: 13px;
     line-height: 18px;
     color: #bdbdbd;
+    padding-top: 10px;
 }
 
 .copyright span {
@@ -1015,4 +1088,23 @@ form button:nth-child(2):hover {
     font-size: 13px;
     line-height: 25px;
     color: #73b6cc;
+}
+
+.social img {
+    padding-top: 10px;
+}
+
+.up {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    font-size: 20px;
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid rgb(234, 142, 10);
+    color: #73b6cc;
+    outline: none;
+    background-color: #a5345c;
 }

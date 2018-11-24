@@ -6,34 +6,45 @@
 
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="css/style_1.css">
 
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectric.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <Header>
     <div class="container">
         <div class="item clock clear">
-            <span class="iconLeft" style="background-image: url(img/png/time.png);"></span>
+            <img src="img/png/time.png" alt="">
+            <span class="iconLeft"></span>
             <span class="time" id="time">20:35:50</span>
             <span class="date" id="date">25 Фев 2018</span>
             <span class="weekday" id="weekday">Четверг</span>
         </div>
         <div class="lang">
             <div class="language">
-                <span></span>
+                <img src="img/png/language.png" alt="">
+                <label for="language"></label>
+                <select name="language" id="language">
+                    <option value="RU">RU</option>
+                </select>
             </div>
             <div class="social">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="#"><img src="img/png/social_1.png" alt=""></a>
+                <a href="#"><img src="img/png/social_2.png" alt=""></a>
+                <a href="#"><img src="img/png/social_3.png" alt=""></a>
+                <a href="#"><img src="img/png/social_4.png" alt=""></a>
             </div>
         </div>
         <div class="contacts clear">
             <a href="#"><img src="img/svg/1.svg" alt=""></a>
             <a href="#"><img src="img/svg/2.svg" alt=""></a>
-            <a href="#">+ 8 800 123-45-67</a>
+            <a href="tel:+ 8 800 123-45-67">+ 8 800 123-45-67</a>
         </div>
     </div>
 </header>
@@ -134,16 +145,15 @@
             потенциал и зарабатывать действительно хорошие<br> деньги.</p>
         <h1>Виды партнёрства</h1>
     </div>
-    <div class="menu">
-        <ul>
-            <li><a href="">многоуровневая партнерская программа</a></li>
-            <li><a href="">бонуская программа</a></li>
-            <li><a href="">офисная программа</a></li>
+    <div class="menu" id="menuPart">
+        <ul class="menuPart">
+            <li><a href="#tab1">многоуровневая партнерская программа</a></li>
+            <li><a href="#tab2">бонуская программа</a></li>
+            <li><a href="#tab3">офисная программа</a></li>
         </ul>
     </div>
 </div>
-<!--Многоуровневая партнерская программа-->
-<div class="manyLevel" style="background-image: url(img/jpg/fon_1.jpg);">
+<div class="manyLevel" id="tab1" style="background-image: url(img/jpg/fon_1.jpg);">
     <div class="container">
         <div class="partners clear">
             <div class="infoPart">
@@ -207,8 +217,7 @@
         </div>
     </div>
 </div>
-<!--Бонусная программа-->
-<div class="bonusProg" style="background-image: url(img/jpg/fon_1.jpg)">
+<div class="bonusProg" id="tab2" style="background-image: url(img/jpg/fon_1.jpg)">
     <div class="container">
         <div class="infoBonus">
             <p>Lorem Ipsum используют потому, что тот обеспечивает более или менее тандартное заполнение шаблона, а
@@ -262,8 +271,7 @@
         </div>
     </div>
 </div>
-<!--Офисная программа-->
-<div class="oficeProg" style="background-image: url(img/jpg/fon_ofice.jpg)">
+<div class="oficeProg" id="tab3" style="background-image: url(img/jpg/fon_ofice.jpg)">
     <div class="container">
         <div class="steps clear">
             <ul class="stepOffice">
@@ -429,12 +437,13 @@
                 письменного разрешения владельца</p>
         </div>
         <div class="social">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#"><img src="img/png/soc_1.png" alt=""></a>
+            <a href="#"><img src="img/png/soc_2.png" alt=""></a>
+            <a href="#"><img src="img/png/soc_3.png" alt=""></a>
+            <a href="#"><img src="img/png/soc_4.png" alt=""></a>
         </div>
     </div>
 </div>
+<button class="up">Наверх</button>
 </body>
 </html>
